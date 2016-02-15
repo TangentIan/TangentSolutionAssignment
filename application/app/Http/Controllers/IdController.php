@@ -117,7 +117,6 @@ class IdController extends Controller
             'id' => $id
         ));
     }
-
     /**
      * Responds on the GET request url /api/id/{id}
      *
@@ -128,8 +127,6 @@ class IdController extends Controller
      */
     public function show($id)
     {
-
-
         if(!preg_match("/^\\d{13}$/",$id)) {
             return response()->json(array(
                 'error' => 'The given South African ID Number is invalid.'

@@ -10,7 +10,8 @@ function ValidateController(IDService) {
      * @id Generated ID or Text Displayed
      * @message error message that will be displayed if there is a error when invoking the service
      * @error flag if there is an error
-     * @disableGenerate flag to disable generate to prevent multiple server requests
+     * @success flag if the validation has passed
+     * @disableValidate flag to disable generate to prevent multiple server requests
      *
      * @type {{id: string, message: string, error: boolean, disableGenerate: boolean}}
      */
