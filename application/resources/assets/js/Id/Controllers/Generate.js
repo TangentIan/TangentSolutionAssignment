@@ -3,7 +3,9 @@
  */
 
 function GenerateController() {
-    
+    this.model = {
+        id: '...'
+    };
 }
 
 module.exports = GenerateController;
