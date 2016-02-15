@@ -1,0 +1,36 @@
+{
+  "name": "application",
+  "version": "1.0.0",
+  "description": "ID Generation and Validation",
+  "main": "none",
+  "devDependencies": {
+    "gulp": "^3.8.8"
+  },
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.0",
+    "laravel-elixir": "^4.0.0",
+    "bootstrap-sass": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "php artisan serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancoisVenter/TangentSolutionAssignment.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "Laravel",
+    "REST"
+  ],
+  "author": "Francois Venter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FrancoisVenter/TangentSolutionAssignment/issues"
+  },
+  "homepage": "https://github.com/FrancoisVenter/TangentSolutionAssignment#readme"
+}
