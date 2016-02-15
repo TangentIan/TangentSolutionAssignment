@@ -17,6 +17,20 @@ Route::get('/', function () {
 
 /*
 |--------------------------------------------------------------------------
+| REST API Routes
+|--------------------------------------------------------------------------
+|
+| Configuration for API REST Services
+|
+ */
+
+//Enable two get requests with endpoints index and show on the IdController
+Route::resource('api/id', 'IdController', ['only' => [
+    'index', 'show'
+]]);
+
+/*
+|--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
 |
