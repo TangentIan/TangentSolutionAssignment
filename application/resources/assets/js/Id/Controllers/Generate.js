@@ -32,8 +32,9 @@ function GenerateController(IDService) {
                 vm.model.id = data.id;
                 vm.model.disableGenerate = false;
             }, function (err) {
-                vm.model.message = 'Could not complete the request, contact support. Status: ' + err.status;
                 vm.model.error = true;
+                vm.model.message = 'Could not complete the request, contact support. Status: ' + err.status;
+                vm.model.disableGenerate = false;
             });
     }
 }

@@ -128,10 +128,18 @@ class IdController extends Controller
      */
     public function show($id)
     {
-        $valid = $this->validate_id($id);
 
-        return response()->json(array(
-            'valid' => $valid
-        ));
+
+        if(!preg_match("/^\\d{13}$/",$id)) {
+            return response()->json(array(
+                'error' => 'The given South African ID Number is invalid.'
+            ), 400);
+        }  else {
+            $valid = $this->validate_id($id);
+
+            return response()->json(array(
+                'valid' => $valid
+            ));
+        }
     }
 }

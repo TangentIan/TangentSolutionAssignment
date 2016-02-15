@@ -4,12 +4,18 @@
     </div>
     <div class="row well">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="ID Number">
+            <input type="text" class="form-control" placeholder="ID Number" data-ng-model="ValidateCtrl.model.id">
             <span class="input-group-addon" id="id-number"><span class="glyphicon glyphicon-tag"></span></span>
         </div>
     </div>
+    <div class="row alert alert-danger" data-ng-show="ValidateCtrl.model.error">
+        {{ValidateCtrl.model.message}}
+    </div>
+    <div class="row alert alert-success" data-ng-show="ValidateCtrl.model.success">
+        The given South African ID Number is valid.
+    </div>
     <hr />
     <div class="row">
-        <button class="btn btn-primary">Validate</button>
+        <button class="btn btn-primary" data-ng-click="ValidateCtrl.validate()" data-ng-disabled="ValidateCtrl.model.disableValidate">Validate</button>
     </div>
 </div>

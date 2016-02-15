@@ -17,7 +17,7 @@ function IDService($http, $q) {
             }
 
         }, function (response) {
-            deferred.resolve(response);
+            deferred.reject(response);
         });
 
         return deferred.promise;
@@ -37,7 +37,7 @@ function IDService($http, $q) {
             }
 
         }, function (response) {
-            deferred.resolve(response);
+            deferred.reject(response);
         });
 
         return deferred.promise;
