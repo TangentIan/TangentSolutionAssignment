@@ -8,21 +8,15 @@ I will use Laravel to provide me with easy REST service setup and to serve a sin
 
 1. Composer Install
 
-```sh
-$ composer install
-```
+        $ composer install
 
-2. Install Node dependencies.
+1. Install Node dependencies.
 
-```sh
-$ npm install
-```
+        $ npm install
 
-3. Build Sources
+1. Build Sources
 
-```sh
-$ gulp
-```
+        $ gulp
 
 > If there are any issues running gulp ensure that you have browserify and gulp install globally
 ```sh
